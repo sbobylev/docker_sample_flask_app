@@ -1,4 +1,4 @@
-# Docker Sample Flask App
+# Sample Flask App in a Docker Container
 
 ####Description####
 
