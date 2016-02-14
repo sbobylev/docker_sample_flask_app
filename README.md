@@ -18,7 +18,7 @@ A very basic Flask app in a Docker container.
   ```bash
   git clone https://github.com/sbobylev/docker_sample_flask_app.git
   cd docker_sample_flask_app
-  docker build -t sample-flask-app .
+  docker build --rm=true -t sample-flask-app .
   ```
 
 #### Running ####
