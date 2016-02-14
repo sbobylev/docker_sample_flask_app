@@ -21,7 +21,7 @@ A very basic Flask app in a docker container.
   docker build -t sample-flask-app .
   ```
 
-####Runinig####
+####Runninig####
 
 ```bash
 docker run -p 80:80 -d sample-flask-app
