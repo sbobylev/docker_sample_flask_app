@@ -1,10 +1,10 @@
 # Sample Flask App in a Docker Container
 
-####Description####
+#### Description ####
 
 A very basic Flask app in a Docker container. 
 
-####Installation####
+#### Installation ####
 
 * ***Method 1***
   *  **Pull the image from the docker registry (docker hub) and rename it**
@@ -21,7 +21,7 @@ A very basic Flask app in a Docker container.
   docker build -t sample-flask-app .
   ```
 
-####Running####
+#### Running ####
 
 ```bash
 docker run -p 80:80 -d sample-flask-app
@@ -32,7 +32,7 @@ CONTAINER ID        IMAGE                     COMMAND             CREATED       
 40dd743afd0c        sample-flask-app:latest   "python app.py"     4 seconds ago       Up 3 seconds        0.0.0.0:80->80/tcp   jolly_wilson
 ```
 
-####Testing####
+#### Testing ####
 
 ```bash
 curl http://localhost
