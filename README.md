@@ -4,7 +4,7 @@
 
 A very basic Flask app in a Docker container. 
 
-#### Installation ####
+#### Building ####
 
 * ***Method 1***
   *  **Pull the image from the docker registry (docker hub) and rename it**
