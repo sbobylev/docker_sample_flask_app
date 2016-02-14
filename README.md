@@ -1,18 +1,27 @@
-# docker_sample_flask_app
+# Docker Sample Flask App
 
-**Description**
+####Description####
 
 A very basic Flask app in a docker container. 
 
-**Build**
+####Installation####
 
-```bash
-git clone https://github.com/sbobylev/docker_sample_flask_app.git
-cd docker_sample_flask_app
-docker build -t sample-flask-app .
-```
+* ***Method 1***
+  *  **Pull the image from the docker registry (docker hub) and rename it**
+  ```bash
+  docker pull sbobylev/sample-flask-app
+  docker tag sbobylev/sample-flask-app sample-flask-app
+  docker rmi sbobylev/sample-flask-app
+  ```
+* ***Method 2*** 
+  * **Build the image from scratch**
+  ```bash
+  git clone https://github.com/sbobylev/docker_sample_flask_app.git
+  cd docker_sample_flask_app
+  docker build -t sample-flask-app .
+  ```
 
-**Run**
+####Runinig####
 
 ```bash
 docker run -p 80:80 -d sample-flask-app
@@ -23,7 +32,7 @@ CONTAINER ID        IMAGE                     COMMAND             CREATED       
 40dd743afd0c        sample-flask-app:latest   "python app.py"     4 seconds ago       Up 3 seconds        0.0.0.0:80->80/tcp   jolly_wilson
 ```
 
-**Test**
+#####Testing#####
 
 ```bash
 curl http://localhost
