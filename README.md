@@ -10,7 +10,7 @@ A very basic Flask app in a Docker container.
   *  **Pull the image from the docker registry (docker hub) and rename it**
   ```bash
   docker pull sbobylev/docker_sample_flask_app
-  docker tag sbobylev/docker_sample_flask_app
+  docker tag sbobylev/docker_sample_flask_app docker_sample_flask_app
   docker rmi sbobylev/docker_sample_flask_app
   ```
 * ***Method 2*** 
