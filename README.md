@@ -2,7 +2,7 @@
 
 ####Description####
 
-A very basic Flask app in a docker container. 
+A very basic Flask app in a Docker container. 
 
 ####Installation####
 
@@ -21,7 +21,7 @@ A very basic Flask app in a docker container.
   docker build -t sample-flask-app .
   ```
 
-####Runninig####
+####Running####
 
 ```bash
 docker run -p 80:80 -d sample-flask-app
@@ -32,7 +32,7 @@ CONTAINER ID        IMAGE                     COMMAND             CREATED       
 40dd743afd0c        sample-flask-app:latest   "python app.py"     4 seconds ago       Up 3 seconds        0.0.0.0:80->80/tcp   jolly_wilson
 ```
 
-#####Testing#####
+####Testing####
 
 ```bash
 curl http://localhost
