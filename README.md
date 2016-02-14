@@ -2,7 +2,7 @@
 
 #### Description ####
 
-A very basic Flask app in a Docker container. 
+A very basic Flask app in a Docker container. I've used it to demonstrate Mesos + Marathon + Haproxy docker scaling.
 
 #### Building ####
 
