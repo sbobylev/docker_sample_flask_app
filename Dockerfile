@@ -1,10 +1,12 @@
-FROM debian:jessie
+FROM alpine:latest
 MAINTAINER sbobylev <stas.bobylev@gmail.com>
-RUN apt-get update
-RUN apt-get install -y python-pip
-COPY . /app
+
+RUN apk add --update --no-cache py-flask && rm -rf /var/cache/apk/*
+
+COPY app.py /app
+
 WORKDIR /app
-RUN pip install -r requirements.txt
+
 EXPOSE 80
-ENTRYPOINT ["python"]
-CMD ["app.py"]
+
+ENTRYPOINT ["python", "app.py"]
