@@ -5,7 +5,7 @@ RUN apk add --update --no-cache py-flask && mkdir /app && rm -rf /var/cache/apk/
 
 COPY app.py /app
 
-USER 1234
+USER nobody
 
 WORKDIR /app
 
