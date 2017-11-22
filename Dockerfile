@@ -6,7 +6,7 @@ RUN apk --update upgrade && \
     mkdir /app && \
     rm -rf /var/cache/apk/*
 
-COPY app.py /app
+COPY src/app.py /app
 
 USER nobody
 
