@@ -8,8 +8,6 @@ RUN apk --update upgrade && \
 
 COPY src/app.py /app
 
-USER nobody
-
 WORKDIR /app
 
 EXPOSE 8080
