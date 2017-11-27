@@ -4,7 +4,7 @@
 
 A very basic Flask app in a Docker container. I've used it to demonstrate Mesos + Marathon + Haproxy docker scaling.
 
-#### Building ####
+#### Build ####
 
 * ***Method 1***
   *  **Pull the image from the docker registry (docker hub) and rename it**
@@ -21,7 +21,7 @@ A very basic Flask app in a Docker container. I've used it to demonstrate Mesos 
   $> docker build --rm=true -t docker_sample_flask_app .
   ```
 
-#### Running ####
+#### Run ####
 
 ```bash
 $> docker run -p 8080:8080 -d sbobylev/docker_sample_flask_app
@@ -32,7 +32,7 @@ CONTAINER ID        IMAGE                     COMMAND             CREATED       
 40dd743afd0c        sample-flask-app:latest   "python app.py"     4 seconds ago       Up 3 seconds        0.0.0.0:8080->8080/tcp   jolly_wilson
 ```
 
-#### Testing ####
+#### Test ####
 
 ```bash
 $> curl http://localhost
