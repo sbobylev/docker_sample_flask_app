@@ -35,6 +35,6 @@ CONTAINER ID        IMAGE                     COMMAND             CREATED       
 #### Test ####
 
 ```bash
-$> curl http://localhost
+$> curl http://localhost:8080
 Your current server is 40dd743afd0c
 ```
