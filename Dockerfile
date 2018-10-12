@@ -12,4 +12,6 @@ WORKDIR /app
 
 EXPOSE 8080
 
+USER 1010
+
 ENTRYPOINT ["python", "app.py"]
